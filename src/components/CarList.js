@@ -9,11 +9,6 @@ function CarList() {
     );
   });
 
-  // const cars = useSelector((state) => {
-  //   console.log(state.cars.collection)
-  //   return state.cars.collection;
-  // });
-
   const handleCarDelete = (car) => {
     dispatch(removeCar(car.id));
   };

@@ -17,8 +17,8 @@ function CarForm() {
   };
 
   const handleCostChange = (event) => {
-    event.preventDefault();
-    dispatch(changeCost(event.target.value));
+    const carCost = parseInt(event.target.value) || 0;
+    dispatch(changeCost(carCost));
   };
 
   const handleSubmit = (event) => {
